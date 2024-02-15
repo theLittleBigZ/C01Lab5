@@ -3,7 +3,7 @@ test("1+2=3, empty array is empty", () => {
     expect([].length).toBe(0);
   });
 
-const SERVER_URL = "http://localhost:4000";
+const SERVER_URL = "http://127.0.0.1:4000";
 
 test("/getAllNotes - Return list of zero notes for getAllNotes", async () => {
   const res = await fetch(`${SERVER_URL}/getAllNotes`);
